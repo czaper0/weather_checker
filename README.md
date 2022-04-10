@@ -25,6 +25,7 @@ pip install -r requirements.txt
 ```
 - run wearher.py
 ```
+cd weather
 sudo python weather.py
 ```
 
