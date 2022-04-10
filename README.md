@@ -30,4 +30,4 @@ sudo python weather.py
 ```
 
 ## Screenshots
-![alt text](https://raw.githubusercontent.com/vedant416/weather-app-python/main/OUTPUT.PNG)
+![alt text](weather/example.png)

