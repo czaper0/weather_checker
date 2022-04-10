@@ -1,6 +1,8 @@
+==Experimental repository for steganography learning purposes only! Do not clone!==
+
 # GUI Weather Checker App
 
-This is simple Web Scraping project using beautifulsoup4 and requests module
+This is simple Web Scraping project using beautifulsoup4 and requests module.
 
 
 ## Prerequisites
