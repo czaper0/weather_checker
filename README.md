@@ -25,8 +25,8 @@ pip install -r requirements.txt
 ```
 - run wearher.py
 ```
-cd weather
-sudo python weather.py
+cd weather_checker/weather
+sudo python main.py
 ```
 
 ## Screenshots
